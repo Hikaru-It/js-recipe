@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <h1>富士山の頂上は何県？</h1>
+    <button id="y">山梨県</button>
+    <button id="s">静岡県</button>
+    <button id="k">神奈川県</button>
+    <div id="a"></div>
+    <script>
+      const button1 = document.getElementById("y")
+      const button2 = document.getElementById("s")
+      const button3 = document.getElementById("k")
+      const ans = document.getElementById("a")
+      button1.onclick = function () {
+        ans.textContent = "正解！！"
+      }
+      button2.onclick = function () {
+        ans.textContent = "正解！！"
+      }
+      button3.onclick = function () {
+        ans.textContent = "はずれ＾＾"
+      }
+    </script>
+  </body>
+</html>
