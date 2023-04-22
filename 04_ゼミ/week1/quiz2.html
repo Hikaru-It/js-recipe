@@ -8,15 +8,24 @@
   </head>
   <body>
     <h1>富士山の頂上は何県？</h1>
-    <button id="y">山梨県</button>
-    <button id="s">静岡県</button>
-    <button id="k">神奈川県</button>
+    <img
+      id="change"
+      src="data:image/png;base64,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"
+      alt="富士山"
+    />
+    <button id="y" disabled>山梨県</button>
+    <button id="s" disabled>静岡県</button>
+    <button id="k" disabled>神奈川県</button>
+    <br />
+    <button id="img">?</button>
     <div id="a"></div>
     <script>
       const button1 = document.getElementById("y")
       const button2 = document.getElementById("s")
       const button3 = document.getElementById("k")
       const ans = document.getElementById("a")
+      const q = document.getElementById("img")
+      const img = document.getElementById("change")
       button1.onclick = function () {
         ans.textContent = "正解！！"
       }
@@ -25,6 +34,10 @@
       }
       button3.onclick = function () {
         ans.textContent = "はずれ＾＾"
+      }
+      q.onclick = function () {
+        img.src =
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKkdqFG1GRL5sDf1dKYyxE9xbaBcEoz5PuYg&usqp=CAU"
       }
     </script>
   </body>
